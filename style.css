@@ -1,0 +1,66 @@
+/* import google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+body{
+    background: #E3F2FD;
+}
+h1{
+    text-align: center;
+   
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+.container .color{
+    list-style: none;
+    box-shadow: 0px 0px 8px grey;
+    margin: 13px;
+    padding:7px;
+    border-radius: 8px;
+    background:#fff;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+}
+.container .color:active{
+    transform: scale(0.95);
+}
+.color:hover .rect-box{
+    filter:brightness(105%);
+}
+.color .rect-box{
+    border-radius: 4px;
+    width: 135px;
+    height: 138px;
+    background: #8A6CFF;
+}
+.color .hex-value{
+    display: block;
+    color:#444;
+    margin: 12px 0px 8px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.generate-btn{
+    outline:none;
+    cursor:pointer;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    font-weight: 500;
+    color:#fff;
+    background: #8A6CFF;
+    border:2px solid #fff;
+    box-shadow: 0px 0px 8px grey;
+}
